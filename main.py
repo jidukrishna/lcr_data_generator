@@ -14,15 +14,17 @@ def generate_graph(L,R,C,V,start_f,end_f,no_of_points,name_graph="graph.png"):
 
 
 
-    def get_fr(L, C):
+    def get_fr(L, C,R):
         """Function to compute resonant frequency."""
         f_resonant = 1 / (2 * np.pi * np.sqrt(L * C))
+        f_r = (1 / (2 * np.pi)) * np.sqrt(1 / (L * C)) * np.sqrt(1 - (R / (2 * np.sqrt(L/C)))**2)
+
         return f_resonant
 
 
     def get_Imax(V, L, R, C):
         """Function to compute maximum current and resonant frequency."""
-        f_resonant = get_fr(L, C)
+        f_resonant = get_fr(L, C,R)
         w = 2 * np.pi * f_resonant
         I_max = (V / np.sqrt(R**2 + (w * L - 1 / (w * C))**2)) * 10**3  # in mA
         return I_max, f_resonant
