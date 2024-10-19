@@ -392,7 +392,7 @@ def main():
 
 
 
-def test()
+def test():
     # LCR circuit parameters
     L = 30 * 10 ** -3  # inductance in Henry
     R = "200"  # resistance in Ohms
