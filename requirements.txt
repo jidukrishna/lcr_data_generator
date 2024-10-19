@@ -16,3 +16,11 @@ pyparsing       3.2.0
 python-dateutil 2.9.0.post0
 reportlab       4.2.5
 six             1.16.0
+
+numpy~=2.1.2
+matplotlib~=3.9.2
+img2pdf~=0.5.1
+customtkinter~=5.2.2
+reportlab~=4.2.5
+pillow~=11.0.0
+pypdf~=5.0.1
