@@ -15,8 +15,9 @@ python3 main.py
 ```
 git clone https://github.com/jidukrishna/lcr_data_generator.git
 cd lcr_data_generator
-python3 -m venv env
-activate
+pip install virtualenv
+virtualenv env
+.\env\scripts\activate
 pip install -r requirements.txt
 python3 main.py
 
