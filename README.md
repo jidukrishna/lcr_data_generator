@@ -1,3 +1,6 @@
+
+# In Development 😮‍💨
+
 ## use this to run the app in linux env
 ```
 git clone https://github.com/jidukrishna/lcr_data_generator.git
